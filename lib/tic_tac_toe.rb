@@ -73,7 +73,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
   def full?(board)
-    board.all? {|cell| cell == "X" || cell == "O"}
+    @board.all? {|cell| cell == "X" || cell == "O"}
   end
 
 
@@ -86,12 +86,8 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
 
-  def over?(board)
-    if won?(board) || draw?(board)
-      true
-    else
-      false
-    end
+  def over?
+    won? || draw?
   end
 
  def winner(board)
@@ -100,7 +96,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
    if player == false
      return nil
    else
-     if board[player[0]] == "X"
+     if @board[player[0]] == "X"
        return "X"
      else
        return "O"
