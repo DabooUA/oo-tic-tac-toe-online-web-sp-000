@@ -76,7 +76,7 @@ class TicTacToe
     p_token = current_player
   if valid_move?(index)
     move(index, p_token)
-    @display_board
+    display_board
   else
     turn
     end
