@@ -94,7 +94,7 @@ class TicTacToe
   end
 
   def full?
-    @board.all? {|cell| cell == "" || cell == " "}
+    @board.all? {|cell| cell == "X" || cell == "O"}
   end
 
   def draw?
