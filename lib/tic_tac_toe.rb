@@ -76,7 +76,6 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     @board.any? {|cell| cell == "" || cell == " "}
   end
 
-
   def draw?
    !won? && full?
   end
