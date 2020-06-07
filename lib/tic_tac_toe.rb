@@ -96,15 +96,8 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
   def play
-    until over? == true
-      turn
-    end
-
-    if won?
-      puts "Congratulations #{winner}!"
-    elsif draw?
-      puts "Cat's Game!"
+    turn until over?
+    won? puts "Congratulations #{winner}!" : puts "Cat's Game!"
 
     end
-  end
 end
