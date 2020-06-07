@@ -32,8 +32,8 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
 
-  def position_taken?(board, index)
-    !(board[index].nil? || board[index] == " ")
+  def position_taken?(index)
+    !(@board[index].nil? || board[index] == " ")
   end
 
 
