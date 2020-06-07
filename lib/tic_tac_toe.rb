@@ -66,7 +66,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     index = input_to_index(input)
     p_token = current_player
   if valid_move?(board, index)
-    move(board, index, p_token)
+    move(index, p_token)
     @display_board
   else
     turn(board)
