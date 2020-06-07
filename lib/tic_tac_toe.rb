@@ -106,4 +106,5 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
       puts "Cat's Game!"
 
     end
+  end
 end
