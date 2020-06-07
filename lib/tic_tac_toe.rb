@@ -34,7 +34,6 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     !(@board[index].nil? || board[index] == " ")
   end
 
-
   def move(index, current_player)
     @board[index] = current_player
   end
