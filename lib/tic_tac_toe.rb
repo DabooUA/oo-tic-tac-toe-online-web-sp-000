@@ -82,7 +82,7 @@ class TicTacToe
     end
   end
 
-  def full?
+    def full?
       @board.all? {|cell| cell == "X" || cell == "O"}
     end
 
