@@ -74,11 +74,20 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
   def draw?
-   !won? && full?
+  if !won?&& full?
+    return true
+  else
+    return false
   end
+end
 
-  def over?
-    won? || draw?
+
+  def over?(board)
+    if won?(board) || draw?(board)
+      true
+    else
+      false
+    end
   end
 
  def winner
