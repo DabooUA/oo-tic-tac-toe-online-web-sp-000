@@ -8,6 +8,6 @@ game = TicTacToe.new
 
 game.play
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 #display_board
