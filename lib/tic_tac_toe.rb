@@ -81,7 +81,6 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
    !won? && full?
   end
 
-
   def over?
     won? || draw?
   end
