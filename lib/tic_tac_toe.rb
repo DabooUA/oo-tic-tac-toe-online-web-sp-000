@@ -26,7 +26,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 @display_board
   end
 
-  def won?(board)
+  def won?
    WIN_COMBINATIONS.each {|win_combination|
 
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
