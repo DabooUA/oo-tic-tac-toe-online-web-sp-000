@@ -83,7 +83,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 
  def winner
    player = []
-   player = won?(board)
+   player = won?
    if player == false
      return nil
    else
