@@ -82,7 +82,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 
 
-  def over?(board)
+  def over?
     if won?(board) || draw?(board)
       true
     else
