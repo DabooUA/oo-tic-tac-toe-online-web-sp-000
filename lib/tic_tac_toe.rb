@@ -77,12 +77,8 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
 
-  def draw?(board)
-    if !won?(board) && full?(board)
-      return true
-    else
-      return false
-    end
+  def draw?
+   !won? && full?
   end
 
 
