@@ -49,7 +49,6 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
    turn_count % 2 == 0 ? "X" : "O"
   end
 
-
   def turn_count(board)
       count = 0
       @board.each do |spaces|
