@@ -5,9 +5,9 @@ require_relative '../lib/tic_tac_toe'
 
 puts "Welcome to Tic Tac Toe!"
 
-#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-#display_board
+display_board
 
 game = TicTacToe.new
 game.play
