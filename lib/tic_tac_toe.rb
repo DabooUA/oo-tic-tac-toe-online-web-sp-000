@@ -81,7 +81,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     won? || draw?
   end
 
- def winner(board)
+ def winner
    player = []
    player = won?(board)
    if player == false
