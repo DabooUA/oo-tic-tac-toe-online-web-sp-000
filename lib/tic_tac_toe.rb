@@ -61,7 +61,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     input = gets.strip
     index = input_to_index(input)
     p_token = current_player
-  if valid_move?(board, index)
+  if valid_move?(index)
     move(index, p_token)
     @display_board
   else
