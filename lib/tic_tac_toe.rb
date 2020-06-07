@@ -73,7 +73,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
   def full?
-    @board.all? {|cell| cell == "X" || cell == "O"}
+    @board.any? {|cell| cell == "" || cell == " "}
   end
 
 
