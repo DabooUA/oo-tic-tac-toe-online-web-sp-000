@@ -96,7 +96,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
   def play
-    turn until over? 
+    turn until over?
     won? ? puts "Congratulations #{winner}!" : puts "Cat's Game!"
 
     end
