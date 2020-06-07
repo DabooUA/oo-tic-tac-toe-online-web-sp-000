@@ -38,7 +38,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 
 
   def move(index, current_player)
-    board[index] = current_player
+    @board[index] = current_player
   end
 
   def valid_move? (index)
