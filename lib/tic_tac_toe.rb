@@ -45,7 +45,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     index.between?(0,8) && !position_taken?(board, index)
   end
 
-  def current_player(board)
+  def current_player
    turn_count(board) % 2 == 0 ? "X" : "O"
   end
 
