@@ -51,7 +51,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 
   def turn_count(board)
       count = 0
-      board.each do |spaces|
+      @board.each do |spaces|
         if spaces == "X" || spaces == "O"
           count += 1
         end
