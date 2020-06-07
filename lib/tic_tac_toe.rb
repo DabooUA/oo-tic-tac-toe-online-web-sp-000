@@ -95,10 +95,15 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     end
   end
 
-  def self.play
+  def play(board)
+    until over?(board) == true
+      turn(board)
+    end
 
-    turn until over?
-    won? ? puts ("Congratulations #{winner}!") : puts ("Cat's Game!")
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    elsif draw?(board)
+      puts "Cat's Game!"
 
     end
 end
