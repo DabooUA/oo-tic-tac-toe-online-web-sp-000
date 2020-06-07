@@ -65,7 +65,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     move(index, p_token)
     @display_board
   else
-    turn(board)
+    turn
     end
   end
 
